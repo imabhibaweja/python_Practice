@@ -28,3 +28,7 @@ match day:
         print("It\'s Sunday")
     case _:
         print("Nikal Pahli fursat me!!!")
+
+#for loop
+for i in range(1,11):
+    print(i)
