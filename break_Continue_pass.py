@@ -9,7 +9,7 @@ while(i<6):
 
 #continue
 i=1
-while(i<6):
+while i<6:
     if(i==3):
         i+=1
         continue
