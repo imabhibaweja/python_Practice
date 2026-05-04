@@ -16,7 +16,8 @@
 # print(name.find("and"));
 # print(name.replace("and", "with"))
 
-text = "Apple, Bananas, Grapes, Mangoes"
+text = "Apple,Bananas,Pinapples"
 print(text)
 print(text.split(','))
 print(text.split('a'))
+print("a".join(['Apple,B', 'n', 'n', 's,Pin', 'pples']))
