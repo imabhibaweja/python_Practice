@@ -16,8 +16,14 @@
 # print(name.find("and"));
 # print(name.replace("and", "with"))
 
-text = "Apple,Bananas,Pinapples"
-print(text)
-print(text.split(','))
-print(text.split('a'))
-print("a".join(['Apple,B', 'n', 'n', 's,Pin', 'pples']))
+# text = "Apple,Bananas,Pinapples"
+# print(text)
+# print(text.split(','))
+# print(text.split('a'))
+# print("a".join(['Apple,B', 'n', 'n', 's,Pin', 'pples']))
+
+text="AbhiBaweja123"
+print(text.isalpha())
+print(text.isdigit())
+print(text.isalnum())
+print(text.isspace())
