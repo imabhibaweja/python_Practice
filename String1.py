@@ -12,6 +12,11 @@
 # print(name.lstrip())
 # print(name.rstrip())
 
-name = "Baweja and Family"
-print(name.find("and"));
-print(name.replace("and", "with"))
+# name = "Baweja and Family"
+# print(name.find("and"));
+# print(name.replace("and", "with"))
+
+text = "Apple, Bananas, Grapes, Mangoes"
+print(text)
+print(text.split(','))
+print(text.split('a'))
