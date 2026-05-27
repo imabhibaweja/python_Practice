@@ -1,6 +1,6 @@
 def sum(a,b):
     add= a+b
-    # z=10  # it create a local variable with name z
+    z=10  # it create a local variable with name z
     print(z)
     return add
 
