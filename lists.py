@@ -11,8 +11,11 @@
 # print(marks)
 
 #crate a table of 5 in list
-table =[]
-a = 5
-for i in range (1,11):
-    table.append(a*i)
+# table =[]
+# a = 5
+# for i in range (1,11):
+#     table.append(a*i)
+# print(table)
+
+table= [5*i for i in range(1,11)]
 print(table)
