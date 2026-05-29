@@ -17,9 +17,6 @@
 # a=list(b)
 # print(a, type(a))
 rate = {"a": 20, "b": 90, "c": 60}
-b= tuple(rate.values())
-b=list(b)
-b.sort()
-c= b[len(b)-1]
-keys = [k for k, v in rate.items() if v == c]
-print (keys)
+rate2 = {"d": 30, "e": 80, "b": 70}
+rate |= rate2
+print(rate)
