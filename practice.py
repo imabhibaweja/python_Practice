@@ -10,9 +10,16 @@
 # print(numbers.values())
 # for keys, values in numbers.items():
 #     print(keys, values)
-a = [1, 2, 3, 2, 4, 1, 5, 1, 2, 3]
-print(a, type(a))
-b = set(a)  
-print(b, type(b))
-a=list(b)
-print(a, type(a))
+# a = [1, 2, 3, 2, 4, 1, 5, 1, 2, 3]
+# print(a, type(a))
+# b = set(a)  
+# print(b, type(b))
+# a=list(b)
+# print(a, type(a))
+rate = {"a": 20, "b": 90, "c": 60}
+b= tuple(rate.values())
+b=list(b)
+b.sort()
+c= b[len(b)-1]
+keys = [k for k, v in rate.items() if v == c]
+print (keys)
