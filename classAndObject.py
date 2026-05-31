@@ -16,6 +16,7 @@ class Employee:
     
 a = Employee("Abhi", "CEO", 50000)
 b = Employee("Aman", "Director", 70000)
+c = Employee("Harshita")
 print(a.get_name())
 print(a.get_post())
 print(a.get_salary())
@@ -23,6 +24,10 @@ print()
 print(b.get_name())
 print(b.get_post())
 print(b.get_salary())
+print()
+print(c.get_name())
+print(c.get_post())
+print(c.get_salary())
     
 
 # a=Employee()
