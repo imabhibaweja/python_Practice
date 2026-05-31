@@ -21,8 +21,8 @@ print(a.get_post())
 print(a.get_salary())
 print()
 print(b.get_name())
-print(a.get_post())
-print(a.get_salary())
+print(b.get_post())
+print(b.get_salary())
     
 
 # a=Employee()
