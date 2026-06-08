@@ -1,20 +1,24 @@
 class Employee:
+    post = "Programmer" #class attribute
     # without default values
-    def __init__(self, name, post, salary):
+    # def __init__(self, name, post, salary): # here post is instance attribute
+    #     self.name = name
+    #     self.post = post
+    #     self.salary = salary
+
+    def __init__(self, name, salary): # here post is instance attribute
         self.name = name
-        self.post = post
         self.salary = salary
     
     def get_name(self):
         return self.name
 
-    def get_post(self):
-        return self.post
     
     def get_salary(self):
         return self.salary
     
-Abhi = Employee("Abhi", "CEO", 50000)
-print(Abhi.get_name())
-print(Abhi.get_post())
-print(Abhi.get_salary())
+# Abhi = Employee("Abhi", "CEO", 50000)
+Harshita = Employee("Harshita", 10000)
+print(Harshita.get_name())
+print(Harshita.post)
+print(Harshita.get_salary())
