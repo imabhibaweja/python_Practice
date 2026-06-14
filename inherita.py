@@ -8,6 +8,7 @@ class Animal: #parent class (superclass)
 
 class Dog(Animal): # child class
     def speak(self):
+        super().speak()
         print("Woof!!!!!")
     
 class Cat(Animal): #child class
