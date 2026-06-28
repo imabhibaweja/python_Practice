@@ -16,15 +16,26 @@
 # # You can also call class methods on instances, but it's less common:
 # a = Animal()
 # print(a.get_species()) # Reptile
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-    @classmethod
-    def from_string(cls, data):
-        name, age = data.split("-")
-        return cls(name, int(age))  # Creates a new Person instance
+#     @classmethod
+#     def from_string(cls, data):
+#         name, age = data.split("-")
+#         return cls(name, int(age))  # Creates a new Person instance
 
-p = Person.from_string("Alice-30")
-print(p.name, p.age)  # Alice 30
+# p = Person.from_string("Alice-30")
+# print(p.name, p.age)  # Alice 30
+
+class Math4U:
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+print(Math4U.add(3, 5))  # 8
+
+#Can also be called on an instance
+m = Math4U()
+print(m.add(4,5)) # 9
