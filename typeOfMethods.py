@@ -1,18 +1,30 @@
-class Animal:
-    species = "Mammal"  # Class attribute
+# class Animal:
+#     species = "Mammal"  # Class attribute
+
+#     @classmethod
+#     def set_species(cls, new_species):
+#         cls.species = new_species  # Modifies class attribute
+
+#     @classmethod
+#     def get_species(cls):
+#         return cls.species
+
+# print(Animal.get_species())  # Mammal
+# Animal.set_species("Reptile")
+# print(Animal.get_species())  # Reptile
+
+# # You can also call class methods on instances, but it's less common:
+# a = Animal()
+# print(a.get_species()) # Reptile
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
     @classmethod
-    def set_species(cls, new_species):
-        cls.species = new_species  # Modifies class attribute
+    def from_string(cls, data):
+        name, age = data.split("-")
+        return cls(name, int(age))  # Creates a new Person instance
 
-    @classmethod
-    def get_species(cls):
-        return cls.species
-
-print(Animal.get_species())  # Mammal
-Animal.set_species("Reptile")
-print(Animal.get_species())  # Reptile
-
-# You can also call class methods on instances, but it's less common:
-a = Animal()
-print(a.get_species()) # Reptile
+p = Person.from_string("Alice-30")
+print(p.name, p.age)  # Alice 30
