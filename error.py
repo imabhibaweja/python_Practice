@@ -5,5 +5,6 @@ for i in range(0,4):
 
         c = a/b
         print(c)
-    except:
+    except Exception as e:
         print("Some Error occured")
+        print("Error is ", e)
